@@ -1,2 +1,2 @@
-class Search < ActiveRecord::Base
-end
+# class Search < ActiveRecord::Base
+# end
