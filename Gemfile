@@ -8,8 +8,8 @@ gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-gem "mongo_mapper"
-gem "bson_ext"
+# gem "mongo_mapper"
+# gem "bson_ext"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
