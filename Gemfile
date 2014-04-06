@@ -10,6 +10,12 @@ gem 'rails', '4.0.3'
 # gem 'sqlite3'
 # gem "mongo_mapper"
 # gem "bson_ext"
+#
+
+
+# Mongo Stuff
+gem 'mongoid', '~> 4.0.0.beta1'
+gem 'bson_ext'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
