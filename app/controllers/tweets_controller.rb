@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.any_of({message: /.*facebook*./})
+    @tweets = Tweet.all
   end
 
   # GET /tweets/1
