@@ -62,9 +62,13 @@ production:
       # replica set connection setup.
       # Use environment variables or a config file to keep your
       # credentials safe.
-      uri: 'mongodb://heroku_app22880218:mvonebqctpfljc2ones06c5bqs@ds043457.mongolab.com:43457/heroku_app22880218'
+      #uri: 'mongodb://heroku_app22880218:mvonebqctpfljc2ones06c5bqs@ds043457.mongolab.com:43457/heroku_app22880218'
+      hosts:
+        - ds043457.mongolab.com:43457
+        
       username: epireve
       password: epi5519
+      database: heroku_app22880218
 
       options:
         # The default consistency is :eventual, which reads from
