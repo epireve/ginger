@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.all.limit(10)
+    @tweets = Tweet.all.limit(20)
   end
 
   # GET /tweets/1
