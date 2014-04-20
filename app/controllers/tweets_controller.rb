@@ -4,7 +4,9 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.all.limit(20)
+    @tweets = Tweet.all.limit(40).search(params[:search])
+    #@tweets =  Tweet.with(database: "text").mongo_session.command({:tweetdata => {:search => params[:search]}})
+    #@tweets =  Tweet.where(tweetdata: {:search => params[:search]}).all
   end
 
   # GET /tweets/1
