@@ -1,6 +1,9 @@
 class Tweet
   include Mongoid::Document
+  include Mongoid::Search
   field :tweetdata, type: String
+
+  search_in :tweetdata
 
  #  def self.search(search)
 	#   	if search
@@ -9,5 +12,4 @@ class Tweet
 	#    	 	find(:all)
 	#   	end
 	# end
-
 end
