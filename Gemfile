@@ -18,6 +18,7 @@ gem 'rails', '4.0.3'
 # Mongo Stuff
 gem 'mongoid', '~> 4.0.0.beta1'
 gem 'bson_ext'
+gem 'mongoid_search'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -30,6 +31,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'rails_12factor'
 
 gem 'bootstrap-sass'
+#gem 'will_paginate', '~> 3.0'
+gem "will_paginate_mongoid"
 group :development do
   gem 'rails_layout'
 end

@@ -32,5 +32,10 @@
 </table>
 
 <br>
-
+<div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    <%= will_paginate @tweets, :container => false %>
+  </div>
 <%#= link_to 'New Tweet', new_tweet_path %>

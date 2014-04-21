@@ -4,10 +4,11 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.all.limit(40)
+    #@tweets = Tweet.all.limit(40)
     #@tweets = Tweet.full_text_search(params[:search]).all.limit(40)
     #@tweets =  Tweet.with(database: "text").mongo_session.command({:tweetdata => {:search => params[:search]}})
     #@tweets =  Tweet.where(tweetdata: {:search => params[:search]}).all
+    @tweets = Tweet.all.paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /tweets/1
