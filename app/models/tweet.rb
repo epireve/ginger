@@ -1,9 +1,11 @@
 class Tweet
   include Mongoid::Document
-  include Mongoid::Search
+  #include Mongoid::Search
+  #include Mongoid::FullTextSearch
   field :tweetdata, type: String
 
-  search_in :tweetdata
+  #search_in :tweetdata
+  #fulltext_search_in :tweetdata
 
  #  def self.search(search)
 	#   	if search

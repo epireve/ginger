@@ -18,7 +18,8 @@ gem 'rails', '4.0.3'
 # Mongo Stuff
 gem 'mongoid', '~> 4.0.0.beta1'
 gem 'bson_ext'
-gem 'mongoid_search'
+#gem 'mongoid_search'
+#gem 'mongoid_fulltext', git: 'git://github.com/tomg65/mongoid_fulltext.git'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
